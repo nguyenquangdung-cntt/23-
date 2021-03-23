@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FORM</title>
+	<style>
+		div{
+			border: 2px solid black;
+			width: 500px;
+			height: 450px;
+		}
+		div form{
+			padding: 10px;
+		}
+		form .mess #emailBody{
+			margin-left: 25px;
+		}
+		form .mail #email{
+			margin-left: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<form action="#">
+			<h1><strong>Contact Us</strong></h1>
+			<p class="mail">Your email:<input type="email" name="txtEmail" id="email"></p>
+			<table class="mess">
+				<tr>
+					<td><label for="emailBody">Message</label></td>
+					<td><textarea name="txtBody" id="emailBody" cols="50" rows="10" tabindex="2"></textarea></td>
+				</tr>
+			</table>
+			<p>How did you hear of us?
+			<input list="browsers" placeholder="Google">
+				<datalist id="browsers">
+					<option value="Chrome">
+					<option value="Opera">
+				</datalist></p>
+			<p>Newsleter <input type="checkbox" name="check" value="checkbox">Ensure this box is checked if you would like to receive email updates</p>
+			<input type="submit" name="submit" value="Send message">
+		</form>
+	</div>
+</body>
+</html>

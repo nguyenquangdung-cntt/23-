@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FORM</title>
+	<style>
+		fieldset{
+			width: 600px;
+		}
+	</style>
+</head>
+<body>
+	<fieldset class="form1">
+		<legend>Your message:</legend>
+		<table>
+			<tr>
+				<td><label for="emailTo">To</label></td>
+				<td><input type="text" name="txtTo" readonly="readonly" id="emailTo" size="20" value="Example Cafe"></td>
+			</tr>
+			<tr>
+				<td><label for="emailFrom">Your email</label></td>
+				<td><input type="text" name="txtForm" size="20" tabindex="1" maxlength="250"></td>
+			</tr>
+			<tr>
+				<td><label for="emailBody">Message</label></td>
+				<td><textarea name="txtBody" id="emailBody" cols="50" rows="10" tabindex="2"></textarea></td>
+			</tr>
+		</table>
+	</fieldset>
+	<fieldset class="form2">
+		<legend>How you found us:</legend>
+		<table>
+			<tr>
+				<td><label for="list">How did you hear of us</label></td>
+				<td><input list="browsers" placeholder="Google"><datalist id="browsers">
+					<option value="chrome">
+					<option value="coc coc">
+				</datalist></td>
+			</tr>
+			<tr>
+				<td><label for="check">Newsletter</label></td>
+				<td><input type="checkbox" name="checkbox" id="check" value="check">Ensure this box is checked if you would like to receive email updates</td>
+			</tr>
+		</table>
+	</fieldset>
+	<fieldset class="form3">
+		<legend>Contact Information</legend>
+		<table>
+			<tr>
+				<td><label for="nhap1">Fist name:</label></td>
+				<td><input type="text1" name="fistname" id="nhap"></td>
+			</tr>
+			<tr>
+				<td><label for="nhap2">Last name:</label></td>
+				<td><input type="text2" name="lastname" id="nhap2"></td>
+			</tr>
+			<tr>
+				<td><label for="mail">E-mail:</label></td>
+				<td><input type="text" name="email" id="mail"></td>
+			</tr>
+		</table>
+	</fieldset>
+	<fieldset>
+		<legend>Competion Question</legend>
+		<table>
+			<tr>
+				<td><label for="chon">How tall is the Eiffel Towers in Paris, France?</label></td>
+			</tr>
+			<tr>
+				<td>
+					<input type="radio" name="radio" id="chon">584 ft <br>
+					<input type="radio" name="radio" id="chon">784 ft <br>
+			    	<input type="radio" name="radio" id="chon">984 ft <br>
+			    	<input type="radio" name="radio" id="chon">1184 ft
+			    </td>
+			</tr>
+		</table>
+	</fieldset>
+	<fieldset>
+		<legend>Tiebreaker Question</legend>
+		<table>
+			<tr>
+				<td><label for="say">In 25 words or less, say why you would like to win $10,000:</label></td>
+			</tr>
+			<tr>
+				<td><textarea name="tosay" id="say" cols="50" rows="10" tabindex="2"></textarea></td>
+			</tr>
+		</table>
+	</fieldset>
+</body>
+</html>
